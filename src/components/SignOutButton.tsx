@@ -1,3 +1,4 @@
+"use client"; // this is a client component
 import { FC, useState } from 'react'
 import Button from './ui/Button'
 import { signIn, signOut } from 'next-auth/react'

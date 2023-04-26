@@ -1,3 +1,4 @@
+// "use client"; // this is a client component
 import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import { FC, ButtonHTMLAttributes, forwardRef } from "react";

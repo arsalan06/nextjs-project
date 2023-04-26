@@ -1,3 +1,4 @@
+// "use client"; // this is a client component
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { FC } from "react";
@@ -9,7 +10,7 @@ interface NavbarProps {}
 const Navbar = async ({}) => {
   const session = await getServerSession();
   return (
-    <div className="fixed backdrop-blur-sm bg-white dark:bg-slate-900 z-50 top-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-center">
+    <div className="w-screen fixed backdrop-blur-sm bg-white dark:bg-slate-900 z-50 top-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-center">
       <div className="container max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className={buttonVariants({ variant: "link" })}>
           Text Similarity 1.0
